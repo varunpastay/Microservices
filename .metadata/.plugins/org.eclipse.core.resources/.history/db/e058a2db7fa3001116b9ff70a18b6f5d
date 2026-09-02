@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: 05_Api_gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes: ''

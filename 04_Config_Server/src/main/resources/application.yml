@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: 04_Config_Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/varunpastay/config-properties.git
+          
+server:
+  port: 4444

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: 05_Api_gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+          - id: demo-api
+            uri: lb://DEMO-API
+            predicates:
+              - Path=/demo
+              
+server:
+  port: 3333
+            
